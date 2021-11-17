@@ -413,7 +413,6 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 100vw;
 }
 
 .main--info--header--logo {
@@ -628,6 +627,7 @@ body {
     display: flex;
     gap: 30px;
     opacity: 0;
+    z-index: 9999;
     -webkit-animation-name: fade-in;
             animation-name: fade-in;
     -webkit-animation-duration: 0.8s;
