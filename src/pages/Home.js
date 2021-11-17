@@ -42,7 +42,7 @@ function Home() {
                 </div>                
 
                 <div className="main--info--cta">
-                    <button>Get started</button>
+                <Link to=""><button>Get started</button></Link>
                 </div>
 
             </div>
@@ -61,7 +61,7 @@ function Home() {
                 </div>
 
                 <div className="main--video--cta">
-                    <button>Watch video</button>
+                <Link to=""><button>Watch video</button></Link>
                 </div>
                 <video loop autostart autoPlay muted src={Video} 
                     initial={{ y:height }}
