@@ -460,7 +460,7 @@ body {
 
 .main--info--cta {
   background: #1C2956;
-  padding: 20px 0;
+  padding: 0px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -479,6 +479,7 @@ body {
   border-radius: 10px;
   text-align: center;
   cursor: pointer;
+  margin: 20px 0;
 }
 
 .main--video {
