@@ -1,33 +1,23 @@
 import React from 'react'
 
 import Logo from '../assets/images/logo.png'
-import Video from '../assets/images/video.mp4'
-
-import { motion } from "framer-motion"
-
-import useWindowDimensions from '../assets/components/WindowSize';
-
+import Video from '../assets/images/video_compressed.webm'
 
 import { Link } from "react-router-dom";
 
 import { AiOutlineMenu } from 'react-icons/ai';
 
 function Home() {
-    const { height, width } = useWindowDimensions();
     return (
         <div className="main">
-            <div className="main--info"
-                initial={{ opacity: 1, x: -width }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: 1.3, duration: 1, type: 'easeInOut' }}
-            >
+            <div className="main--info">
 
                 <div className="main--info--header">
 
-                    <div className="main--info--header--logo">
+                    <Link to="/"><div className="main--info--header--logo">
                         <img src={Logo} alt="" />
                         <span>adstoria</span>
-                    </div>     
+                    </div></Link>     
 
                     <div className="main--info--header--nav-mobile">
                         <AiOutlineMenu size="25px" />
@@ -47,11 +37,7 @@ function Home() {
 
             </div>
 
-            <div className="main--video"
-                initial={{ width: width+5 }}
-                animate={{ width: width/1.205 }}
-                transition={{ delay: 1.78, duration: 1, type: 'easeInOut' }}
-            >
+            <div className="main--video">
                 <div className="main--video--nav">
                     <Link to="/">Home</Link>
                     <Link to="/services">Services</Link>
@@ -63,11 +49,7 @@ function Home() {
                 <div className="main--video--cta">
                 <Link to=""><button>Watch video</button></Link>
                 </div>
-                <video loop autostart autoPlay muted src={Video} 
-                    initial={{ y:height }}
-                    animate={{ y: 0 }}
-                    transition={{ delay: .5, duration: 1.1, type: 'easeInOut' }}
-                />
+                <video lazy loop autostart autoPlay muted src={Video} />
             </div>
         </div>
     )

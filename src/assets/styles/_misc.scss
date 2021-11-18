@@ -1,0 +1,15 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap');
+
+$white: #ffffff;
+$black: #000000;
+$gray: #A4A4A4;
+$main: #1C2956;
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: $black;
+    overflow: hidden;
+    background: $white;
+}
