@@ -1,13 +1,16 @@
-import React from 'react'
+import React, {useCallback} from 'react';
+import { FullScreen, useFullScreenHandle } from "react-full-screen";
 
 import Logo from '../assets/images/logo.png'
 import Video from '../assets/images/video_compressed.webm'
+import VideoFull from '../assets/images/video.mp4'
 
 import { Link } from "react-router-dom";
 
 import { AiOutlineMenu } from 'react-icons/ai';
 
 function Home() {
+    const handle = useFullScreenHandle();
     return (
         <div className="main">
             <div className="main--info">
@@ -47,7 +50,10 @@ function Home() {
                 </div>
 
                 <div className="main--video--cta">
-                <Link to=""><button>Watch video</button></Link>
+                <button onClick={handle.enter}>Watch video</button>
+                <FullScreen handle={handle}>
+                    <video controls lazy loop autoPlay src={VideoFull} class="video-full" />
+                </FullScreen>
                 </div>
                 <video lazy loop autostart autoPlay muted src={Video} />
             </div>

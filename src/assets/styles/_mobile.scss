@@ -109,6 +109,10 @@
                 border-radius: 10px;
                 cursor: pointer;
             }
+
+            .video-full {
+                filter: brightness(100%);
+            }
         }
 
         video {
