@@ -1,5 +1,6 @@
-import React, {useCallback} from 'react';
+import React from 'react';
 import { FullScreen, useFullScreenHandle } from "react-full-screen";
+import ReactPlayer from 'react-player'
 
 import Logo from '../assets/images/logo.png'
 import Video from '../assets/images/video_compressed.webm'

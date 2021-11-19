@@ -1,10 +1,11 @@
 import React from 'react'
+import Header from '../components/Header'
 
 function Contact() {
     return (
-        <div>
-            contact
-        </div>
+        <>
+            <Header />
+        </>
     )
 }
 
