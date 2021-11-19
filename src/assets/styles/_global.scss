@@ -1,65 +1,109 @@
 
-.header {
+.header { 
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 15px 50px;
+    padding: 15px 20px;
     border: 1px solid $gray;
 
     &--logo {
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        animation: inner-left 1s 1s ease both, text-clip .5s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+        animation-delay: 1.5s;
     }
 
-    &--nav {
-        display: flex;
-        gap: 50px;
-
-        a {
-            color: $black;
-            text-decoration: none;
-            position: relative;
-            font-size: 1.2rem;
-            font-weight: 500;
-
-            &:after {
-                content: '';
-                position: absolute;
-                width: 100%;
-                transform: scaleX(0);
-                height: 1px;
-                bottom: -5px;
-                left: 0;
-                background-color: $black;
-                transform-origin: bottom right;
-                transition: transform 0.2s ease-out;
-              }
-              &:hover:after {
-                transform: scaleX(1);
-                transform-origin: bottom left;
-              }
-        }
-    }
-
-    &--cta {
-        background: $main;
-        color: $white;
-        border-radius: 8px;
-        padding: 13px 30px;
+    &--nav-mobile {
         display: flex;
         align-items: center;
-        gap: 15px;
-        text-transform: uppercase;
-        font-weight: 600;
-        letter-spacing: 1px;
-        cursor: pointer;
-        &:hover {
-            background: #273877;
-            svg {
-                transition: transform .5s ease-in-out;
-                transform: rotate(330deg);
+        justify-content: center;
+        border: 1px solid $gray;
+        z-index: 9999;
+        padding: 15px;
+        border-radius: 100%;
+        margin-top: 20px;
+        animation: inner-left 1s 1s ease both, text-clip .5s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+        animation-delay: 1.8s;
+        background: $white;
+    }
+    &--nav {
+        display:none;
+    }
+    &--cta {
+        display:none;
+    }
+}
+
+@media (min-width: 768px){
+    .header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 50px;
+        border: 1px solid $gray;
+    
+        &--logo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        &--nav-mobile {
+            display:none;
+        }
+    
+        &--nav {
+            display: flex;
+            gap: 50px;
+    
+            a {
+                color: $black;
+                text-decoration: none;
+                position: relative;
+                font-size: 1.2rem;
+                font-weight: 500;
+    
+                &:after {
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    transform: scaleX(0);
+                    height: 1px;
+                    bottom: -5px;
+                    left: 0;
+                    background-color: $black;
+                    transform-origin: bottom right;
+                    transition: transform 0.2s ease-out;
+                  }
+                  &:hover:after {
+                    transform: scaleX(1);
+                    transform-origin: bottom left;
+                  }
+            }
+        }
+    
+        &--cta {
+            background: $main;
+            color: $white;
+            border-radius: 8px;
+            padding: 13px 30px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 1px;
+            cursor: pointer;
+            &:hover {
+                background: #273877;
+                svg {
+                    transition: transform .5s ease-in-out;
+                    transform: rotate(330deg);
+                }
             }
         }
     }
