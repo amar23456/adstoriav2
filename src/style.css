@@ -449,10 +449,12 @@ body {
             animation-delay: 2.3s;
   }
   .main_home--info--title h1 {
+    font-size: 2.5rem;
     -webkit-animation: inner-left 1s 1s ease both, text-clip 0.5s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
             animation: inner-left 1s 1s ease both, text-clip 0.5s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
     -webkit-animation-delay: 2.5s;
             animation-delay: 2.5s;
+    font-weight: 700;
   }
   .main_home--info--title p {
     display: block;
@@ -460,6 +462,7 @@ body {
             animation: inner-left 1s 1s ease both, text-clip 0.5s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
     -webkit-animation-delay: 2.7s;
             animation-delay: 2.7s;
+    font-size: 1.1rem;
   }
   .main_home--info--cta {
     padding: 50px 0;
