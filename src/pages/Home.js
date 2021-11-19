@@ -4,7 +4,7 @@ import ReactPlayer from 'react-player'
 
 import Logo from '../assets/images/logo.png'
 import Video from '../assets/images/video_compressed.webm'
-import VideoFull from '../assets/images/video.mp4'
+import VideoFull from '../assets/images/video_full.mp4'
 
 import { Link } from "react-router-dom";
 
@@ -16,9 +16,8 @@ import { BsFillArrowRightCircleFill } from 'react-icons/bs';
 function Home() {
     const handle = useFullScreenHandle();
 
-    const [sidebar, setSidebar] = useState(false);
-
-    const showSidebar = () => setSidebar (!sidebar);
+    const [menu, setMenu] = useState(false);
+    const showMenu = () => setMenu (!menu);
 
     return (
         <div className="main_home">
@@ -33,10 +32,10 @@ function Home() {
 
                     
                     <div className="main_home--info--header--nav-mobile">
-                        <AiOutlineMenu size="25px" onClick={showSidebar} />  
+                        <AiOutlineMenu size="25px" onClick={showMenu} />  
                     </div>
 
-                    <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>                        
+                    <nav className={menu ? 'nav-menu active' : 'nav-menu'}>                        
                         <div className="nav-menu-items">
                             <Link to="/">Home</Link>
                             <Link to="/services">Services</Link>

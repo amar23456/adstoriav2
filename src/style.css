@@ -783,6 +783,7 @@ button:hover {
           transform: scale(1.05);
 }
 
+/* MOBILE */
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -812,10 +813,6 @@ button:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-animation: inner-left 1s 1s ease both, text-clip 0.5s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
-          animation: inner-left 1s 1s ease both, text-clip 0.5s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
-  -webkit-animation-delay: 1.5s;
-          animation-delay: 1.5s;
 }
 
 .header--nav-mobile {
@@ -833,10 +830,6 @@ button:hover {
   padding: 15px;
   border-radius: 100%;
   margin-top: 20px;
-  -webkit-animation: inner-left 1s 1s ease both, text-clip 0.5s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
-          animation: inner-left 1s 1s ease both, text-clip 0.5s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
-  -webkit-animation-delay: 1.8s;
-          animation-delay: 1.8s;
   background: #ffffff;
 }
 
@@ -848,6 +841,7 @@ button:hover {
   display: none;
 }
 
+/* DESKTOP & TABLET */
 @media (min-width: 768px) {
   .header {
     display: -webkit-box;
