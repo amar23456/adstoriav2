@@ -8,40 +8,45 @@ import VideoFull from '../assets/images/video.mp4'
 import { Link } from "react-router-dom";
 
 import { AiOutlineMenu } from 'react-icons/ai';
+import { BsFillPlayCircleFill } from 'react-icons/bs';
+import { BsFillArrowRightCircleFill } from 'react-icons/bs';
 
 function Home() {
     const handle = useFullScreenHandle();
     return (
-        <div className="main">
-            <div className="main--info">
+        <div className="main_home">
+            <div className="main_home--info">
 
-                <div className="main--info--header">
+                <div className="main_home--info--header">
 
-                    <Link to="/"><div className="main--info--header--logo">
+                    <Link to="/"><div className="main_home--info--header--logo">
                         <img src={Logo} alt="" />
                         <span>adstoria</span>
                     </div></Link>     
 
-                    <div className="main--info--header--nav-mobile">
+                    <div className="main_home--info--header--nav-mobile">
                         <AiOutlineMenu size="25px" />
                     </div>
 
                 </div>          
 
-                <div className="main--info--title">
+                <div className="main_home--info--title">
                     <h1>Evolve into your full potential with creative & growth solutions</h1>
 
                     <p>These are the words we live by in everything we do. Every story we tell, every brand we build, and every interaction we create must not only look beautiful but has to feel and function beautifully, too. Crafted to perfection.</p>
                 </div>                
 
-                <div className="main--info--cta">
-                <Link to=""><button>Get started</button></Link>
+                <div className="main_home--info--cta">
+                <Link to=""><button>
+                    Get started
+                    <BsFillArrowRightCircleFill size="35" />
+                    </button></Link>
                 </div>
 
             </div>
 
-            <div className="main--video">
-                <div className="main--video--nav">
+            <div className="main_home--video">
+                <div className="main_home--video--nav">
                     <Link to="/">Home</Link>
                     <Link to="/services">Services</Link>
                     <Link to="/portofolio">Portofolio</Link>
@@ -49,8 +54,11 @@ function Home() {
                     <Link to="/contact">Contact</Link>
                 </div>
 
-                <div className="main--video--cta">
-                <button onClick={handle.enter}>Watch video</button>
+                <div className="main_home--video--cta">
+                <button onClick={handle.enter}>
+                    Watch video
+                    <BsFillPlayCircleFill size="35" />
+                </button>
                 <FullScreen handle={handle}>
                     <video controls lazy loop autoPlay src={VideoFull} class="video-full" />
                 </FullScreen>

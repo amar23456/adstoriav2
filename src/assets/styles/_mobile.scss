@@ -1,6 +1,6 @@
 /* MOBILE */
 
-.main {
+.main_home {
     display: flex;
     flex-direction: column;
     width: 100vw;
@@ -83,12 +83,18 @@
                 text-align: center;
                 cursor: pointer;
                 margin: 20px 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: row;
+                width: 50vw;
+                gap: 20px;
             }
         }
     }
 
     &--video {
-        height: 100vh;
+        height: 100%;
         overflow: hidden;
         position: relative;
         z-index: 2;
@@ -114,6 +120,12 @@
                 padding: 10px 15%;
                 border-radius: 10px;
                 cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: row;
+                width: 50vw;
+                gap: 20px;
             }
 
             .video-full {
