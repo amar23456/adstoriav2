@@ -252,6 +252,10 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin: 30px 0 0 30px;
+  -webkit-animation: inner-left 1s 1s ease both, text-clip 0.5s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+          animation: inner-left 1s 1s ease both, text-clip 0.5s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+  -webkit-animation-delay: 2.3s;
+          animation-delay: 2.3s;
 }
 
 .main--info--header--nav-mobile {
@@ -269,6 +273,10 @@ body {
   padding: 15px;
   border-radius: 100%;
   margin-top: 20px;
+  -webkit-animation: inner-left 1s 1s ease both, text-clip 0.5s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+          animation: inner-left 1s 1s ease both, text-clip 0.5s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+  -webkit-animation-delay: 2.3s;
+          animation-delay: 2.3s;
 }
 
 .main--info--title {
@@ -277,6 +285,10 @@ body {
 
 .main--info--title h1 {
   font-size: 1.5rem;
+  -webkit-animation: inner-left 1s 1s ease both, text-clip 0.5s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+          animation: inner-left 1s 1s ease both, text-clip 0.5s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
 }
 
 .main--info--title p {
@@ -400,8 +412,24 @@ body {
             animation-delay: 1s;
     opacity: 0;
   }
+  .main--info--header--logo {
+    -webkit-animation: inner-left 1s 1s ease both, text-clip 0.5s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+            animation: inner-left 1s 1s ease both, text-clip 0.5s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+    -webkit-animation-delay: 2.3s;
+            animation-delay: 2.3s;
+  }
+  .main--info--title h1 {
+    -webkit-animation: inner-left 1s 1s ease both, text-clip 0.5s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+            animation: inner-left 1s 1s ease both, text-clip 0.5s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+    -webkit-animation-delay: 2.5s;
+            animation-delay: 2.5s;
+  }
   .main--info--title p {
     display: block;
+    -webkit-animation: inner-left 1s 1s ease both, text-clip 0.5s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+            animation: inner-left 1s 1s ease both, text-clip 0.5s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+    -webkit-animation-delay: 2.7s;
+            animation-delay: 2.7s;
   }
   .main--info--cta {
     padding: 50px 0;
@@ -639,5 +667,41 @@ body {
   to {
     height: 30%;
   }
+}
+
+@-webkit-keyframes text-clip {
+  from {
+    -webkit-clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+            clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+    opacity: 0;
+  }
+  to {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    opacity: 1;
+  }
+}
+
+@keyframes text-clip {
+  from {
+    -webkit-clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+            clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+    opacity: 0;
+  }
+  to {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    opacity: 1;
+  }
+}
+
+button {
+  -webkit-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out;
+}
+
+button:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 /*# sourceMappingURL=style.css.map */

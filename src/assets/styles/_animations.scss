@@ -60,3 +60,23 @@
         height: 30%;
     }
   }
+
+
+  @keyframes text-clip {
+    from {
+      clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+      opacity: 0;
+    }
+    to {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      opacity: 1;
+    }
+  }
+
+  button {
+    transition: all .1s ease-in-out;
+  }
+  
+  button:hover {
+    transform: scale(1.05);
+  }

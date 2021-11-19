@@ -34,6 +34,8 @@
                 flex-direction: column;
                 align-items: center;  
                 margin: 30px 0 0 30px;  
+                animation: inner-left 1s 1s ease both, text-clip .5s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+                animation-delay: 2.3s;
             }
 
             &--nav-mobile {
@@ -45,6 +47,8 @@
                 padding: 15px;
                 border-radius: 100%;
                 margin-top: 20px;
+                animation: inner-left 1s 1s ease both, text-clip .5s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+                animation-delay: 2.3s;
             }
         }
 
@@ -53,6 +57,8 @@
 
             h1 {
                 font-size: 1.5rem;
+                animation: inner-left 1s 1s ease both, text-clip .5s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+                animation-delay: 2.5s;
             }
 
             p {
