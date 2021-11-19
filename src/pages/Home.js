@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FullScreen, useFullScreenHandle } from "react-full-screen";
 import ReactPlayer from 'react-player'
 
@@ -9,11 +9,17 @@ import VideoFull from '../assets/images/video.mp4'
 import { Link } from "react-router-dom";
 
 import { AiOutlineMenu } from 'react-icons/ai';
+import { AiOutlineCloseCircle } from 'react-icons/ai';
 import { BsFillPlayCircleFill } from 'react-icons/bs';
 import { BsFillArrowRightCircleFill } from 'react-icons/bs';
 
 function Home() {
     const handle = useFullScreenHandle();
+
+    const [sidebar, setSidebar] = useState(false);
+
+    const showSidebar = () => setSidebar (!sidebar);
+
     return (
         <div className="main_home">
             <div className="main_home--info">
@@ -25,9 +31,20 @@ function Home() {
                         <span>adstoria</span>
                     </div></Link>     
 
+                    
                     <div className="main_home--info--header--nav-mobile">
-                        <AiOutlineMenu size="25px" />
+                        <AiOutlineMenu size="25px" onClick={showSidebar} />  
                     </div>
+
+                    <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>                        
+                        <div className="nav-menu-items">
+                            <Link to="/">Home</Link>
+                            <Link to="/services">Services</Link>
+                            <Link to="/portofolio">Portofolio</Link>
+                            <Link to="/about-us">About Us</Link>
+                            <Link to="/contact">Contact</Link>
+                        </div>                  
+                    </nav>
 
                 </div>          
 
@@ -61,7 +78,7 @@ function Home() {
                     <BsFillPlayCircleFill size="35" />
                 </button>
                 <FullScreen handle={handle}>
-                    <video controls lazy loop autoPlay src={VideoFull} class="video-full" />
+                    <video controls lazy loop autoPlay muted src={VideoFull} class="video-full" />
                 </FullScreen>
                 </div>
                 <video lazy loop autostart autoPlay muted src={Video} />

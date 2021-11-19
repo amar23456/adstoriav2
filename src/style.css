@@ -270,6 +270,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   border: 1px solid #A4A4A4;
+  z-index: 9999;
   padding: 15px;
   border-radius: 100%;
   margin-top: 20px;
@@ -277,6 +278,7 @@ body {
           animation: inner-left 1s 1s ease both, text-clip 0.5s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
   -webkit-animation-delay: 2.3s;
           animation-delay: 2.3s;
+  background: #ffffff;
 }
 
 .main_home--info--title {
@@ -494,6 +496,9 @@ body {
             transform: rotate(330deg);
   }
   .main_home--info--header--nav-mobile {
+    display: none;
+  }
+  .main_home--info--header .nav-menu {
     display: none;
   }
   .main_home--video {
@@ -878,5 +883,61 @@ button:hover {
   transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out;
   -webkit-transform: rotate(330deg);
           transform: rotate(330deg);
+}
+
+.nav-menu {
+  background-color: #1C2956;
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  -webkit-transition: 850ms;
+  transition: 850ms;
+  z-index: 999;
+}
+
+.nav-menu.active {
+  left: 0;
+  -webkit-transition: 350ms;
+  transition: 350ms;
+}
+
+.nav-menu-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 50px;
+}
+
+.nav-menu-items a {
+  color: #ffffff;
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 5px;
+  -webkit-animation: inner-left 1s 1s ease both, text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+          animation: inner-left 1s 1s ease both, text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+  -webkit-animation-delay: 2.3s;
+          animation-delay: 2.3s;
 }
 /*# sourceMappingURL=style.css.map */
