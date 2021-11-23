@@ -177,7 +177,7 @@ template {
 body {
   font-family: 'Poppins', sans-serif;
   color: #000000;
-  overflow: hidden;
+  overflow-x: hidden;
   background: #ffffff;
 }
 
@@ -961,6 +961,10 @@ button:hover {
           justify-content: center;
 }
 
+.main_services .none-mobile {
+  display: none;
+}
+
 /* DESKTOP & TABLET */
 @media (min-width: 768px) {
   .header {
@@ -1079,8 +1083,13 @@ button:hover {
         flex-wrap: wrap;
   }
   .main_services--item {
-    width: 50%;
+    -webkit-box-flex: 44.3155%;
+        -ms-flex: 44.3155%;
+            flex: 44.3155%;
     padding: 50px;
+  }
+  .main_services--item--content--list {
+    margin-top: 30px;
   }
   .main_services--item img {
     max-width: 100%;
@@ -1121,7 +1130,7 @@ button:hover {
           flex-direction: row;
   position: fixed;
   top: 0;
-  left: -100%;
+  left: -110%;
   -webkit-transition: 850ms;
   transition: 850ms;
   z-index: 999;

@@ -57,6 +57,16 @@ function Services() {
                     </div>
                 </div>
 
+                
+                <div className="main_services--item bg-color none-mobile">
+                    <img src={ServicesBrand} alt="" />
+                </div>
+
+                
+                <div className="main_services--item bg-color none-mobile">
+                    <img src={ServicesBrand} alt="" />
+                </div>
+
                 <div className="main_services--item">
                     <div className="main_services--item--top">
                         <div className="main_services--item--top--number empty-number">
@@ -90,18 +100,6 @@ function Services() {
                         </div>
                     
                     </div>
-                </div>
-
-                <div className="main_services--item bg-color none-mobile">
-                    <img src={ServicesBrand} alt="" />
-                </div>
-
-                <div className="main_services--item bg-color none-mobile">
-                    <img src={ServicesBrand} alt="" />
-                </div>
-
-                <div className="main_services--item">
-                    dreapta
                 </div>
 
             </div>
