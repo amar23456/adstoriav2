@@ -864,8 +864,8 @@ button:hover {
 }
 
 .main_services--item {
-  width: 100%;
   padding: 20px;
+  width: 100%;
 }
 
 .main_services--item--top {
@@ -1083,9 +1083,9 @@ button:hover {
         flex-wrap: wrap;
   }
   .main_services--item {
-    -webkit-box-flex: 44.3155%;
-        -ms-flex: 44.3155%;
-            flex: 44.3155%;
+    -webkit-box-flex: 43%;
+        -ms-flex: 43%;
+            flex: 43%;
     padding: 50px;
   }
   .main_services--item--content--list {
