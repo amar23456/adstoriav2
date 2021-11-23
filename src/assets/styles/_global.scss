@@ -35,6 +35,101 @@
     }
 }
 
+.hero {
+    background: $black;
+
+    h1 {
+        margin: 0;
+        text-align: center;
+        padding: 40px 0;
+        color: $white;
+        letter-spacing: 3px;
+        font-weight: 900;
+        font-size: 1.7rem;
+    }
+}
+
+.main_services {
+    display: flex;
+    flex-wrap: wrap;
+
+    &--item {
+        width: 100%;
+        padding: 20px;
+
+        &--top {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            &--number {
+                background: $main;
+                padding: 10px;
+                color: $white;
+                font-weight: 900;
+                border-radius: 50%;
+                width: 30px;
+                height: 30px;
+                font-size: 1.5rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            &--title {
+                margin-left: 20px;
+                h2 {
+                    font-weight: 600;
+                }
+            }
+
+            .empty-number {
+                background: none;
+                border: 1px solid $main;
+                color: $main;
+            }
+        }
+
+        &--content {
+            p {
+                color: #1c1c1c;
+            }
+
+            &--list {
+                display: flex;
+                width: 100%;
+                flex-wrap: wrap;
+                align-items: stretch;
+
+                &--item {
+                    display: flex;
+                    gap: 10px;
+                    width: 50%;
+                    color: #7c7c7c;
+                    margin-bottom: 5px;
+                    align-items: stretch;
+                }
+            }
+
+
+        }
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+    .bg-color {
+        background: $main;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+}
+
+
 /* DESKTOP & TABLET */
 
 @media (min-width: 768px){
@@ -107,4 +202,44 @@
             }
         }
     }
+
+    .hero {
+        background: $black;
+    
+        h1 {
+            margin: 0;
+            text-align: center;
+            padding:70px 0;
+            color: $white;
+            letter-spacing: 3px;
+            font-weight: 900;
+            font-size: 3rem;
+        }
+    }
+    
+    .main_services {
+        display: flex;
+        flex-wrap: wrap;
+    
+        &--item {
+            width: 50%;
+            padding: 50px;
+    
+            img {
+                max-width: 100%;
+            }
+        }
+    
+        .bg-color {
+            background: $main;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .none-mobile {
+            display: block;
+        }
+    }
+
 }
