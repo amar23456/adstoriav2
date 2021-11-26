@@ -52,6 +52,7 @@
 .main_services {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
 
     &--item {
         padding: 20px;
@@ -129,6 +130,41 @@
         display: none;
     }
 
+}
+
+.main_contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    gap: 0;
+    
+    &--informations {
+        background: $main;
+        color: $white;
+        padding: 30px 15px;
+        width: 100%;
+    }
+
+    &--form {
+        display: flex;
+        flex-direction: column;
+        padding: 30px 15px;
+        width: 100%;
+
+        input {
+            width: 95%;
+            padding: 5px 10px;
+            height: 35px;
+            margin-bottom: 15px;
+        }
+
+        textarea { width: 100%; }
+
+        h4 {
+            margin: 0 0 7px 0;
+        }
+    }
 }
 
 
@@ -222,6 +258,7 @@
     .main_services {
         display: flex;
         flex-wrap: wrap;
+        flex-direction: row;
     
         &--item {
             flex: 43%;
@@ -247,6 +284,36 @@
 
         .none-mobile {
             display: block;
+        }
+    }
+
+    .main_contact {
+        flex-direction: row;
+        gap:20px;
+        margin: 50px;
+        
+        &--informations {
+            padding: 50px;
+            width: 30%;
+        }
+    
+        &--form {
+            flex-direction: row;
+            width: 50%;
+
+            form {
+                width: 100%;
+                input {
+                    flex: 1;
+                }
+        
+                textarea { width: 100%l }
+        
+                h4 {
+                }
+            }
+    
+
         }
     }
 

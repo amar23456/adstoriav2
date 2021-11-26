@@ -861,6 +861,10 @@ button:hover {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .main_services--item {
@@ -963,6 +967,55 @@ button:hover {
 
 .main_services .none-mobile {
   display: none;
+}
+
+.main_contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px;
+  gap: 0;
+}
+
+.main_contact--informations {
+  background: #1C2956;
+  color: #ffffff;
+  padding: 30px 15px;
+  width: 100%;
+}
+
+.main_contact--form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 30px 15px;
+  width: 100%;
+}
+
+.main_contact--form input {
+  width: 95%;
+  padding: 5px 10px;
+  height: 35px;
+  margin-bottom: 15px;
+}
+
+.main_contact--form textarea {
+  width: 100%;
+}
+
+.main_contact--form h4 {
+  margin: 0 0 7px 0;
 }
 
 /* DESKTOP & TABLET */
@@ -1081,6 +1134,10 @@ button:hover {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   .main_services--item {
     -webkit-box-flex: 43%;
@@ -1108,6 +1165,36 @@ button:hover {
   }
   .main_services .none-mobile {
     display: block;
+  }
+  .main_contact {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 20px;
+    margin: 50px;
+  }
+  .main_contact--informations {
+    padding: 50px;
+    width: 30%;
+  }
+  .main_contact--form {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 50%;
+  }
+  .main_contact--form form {
+    width: 100%;
+  }
+  .main_contact--form form input {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .main_contact--form form textarea {
+    width: 100%l;
   }
 }
 

@@ -39,10 +39,10 @@ function Header() {
                 <Link to="/about-us">About Us</Link>
             </div>
 
-            <div className="header--cta">
+            <Link to="/contact"><div className="header--cta">
                 Contact
                 <BsFillArrowRightCircleFill size="23" />
-            </div>
+            </div></Link>
         </div>
     )
 }
