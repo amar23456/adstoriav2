@@ -783,6 +783,30 @@ button:hover {
           transform: scale(1.05);
 }
 
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 /* MOBILE */
 .header {
   display: -webkit-box;
@@ -1118,6 +1142,17 @@ button:hover {
   }
   .hero {
     background: #000000;
+  }
+  .hero:hover {
+    background: linear-gradient(140deg, #ee7752 0%, #e73c7e 35%, #23a6d5 73%, #23d5ab 100%);
+    background-size: 400% 400%;
+    -webkit-animation: gradient 3s ease infinite;
+            animation: gradient 3s ease infinite;
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    -webkit-transition: .2s;
+    transition: .2s;
+    border: none;
   }
   .hero h1 {
     margin: 0;

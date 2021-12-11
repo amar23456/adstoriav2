@@ -243,6 +243,20 @@
 
     .hero {
         background: $black;
+        &:hover {
+            background: linear-gradient(
+              140deg,
+              rgba(238, 119, 82, 1) 0%,
+              rgba(231, 60, 126, 1) 35%,
+              rgba(35, 166, 213, 1) 73%,
+              rgba(35, 213, 171, 1) 100%
+            );
+            background-size: 400% 400%;
+            animation: gradient 3s ease infinite;
+            transform-origin: center center;
+            transition: .2s;
+            border: none;
+          }
     
         h1 {
             margin: 0;
@@ -318,3 +332,4 @@
     }
 
 }
+
