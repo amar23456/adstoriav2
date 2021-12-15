@@ -218,6 +218,16 @@ body {
           box-shadow: inset 0px 0px 0px 0px #F0F0F0;
 }
 
+button {
+  -webkit-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out;
+}
+
+button:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
 /* MOBILE */
 .main_home {
   display: -webkit-box;
@@ -810,14 +820,26 @@ body {
   }
 }
 
-button {
-  -webkit-transition: all .1s ease-in-out;
-  transition: all .1s ease-in-out;
+@-webkit-keyframes fade-in-top {
+  from {
+    margin-top: -20px;
+    opacity: 0;
+  }
+  to {
+    margin-top: 0px;
+    opacity: 1;
+  }
 }
 
-button:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+@keyframes fade-in-top {
+  from {
+    margin-top: -20px;
+    opacity: 0;
+  }
+  to {
+    margin-top: 0px;
+    opacity: 1;
+  }
 }
 
 /* MOBILE */

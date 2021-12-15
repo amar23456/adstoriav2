@@ -77,11 +77,8 @@
     }
   }
 
-  button {
-    transition: all .1s ease-in-out;
-  }
-  
-  button:hover {
-    transform: scale(1.05);
-  }
 
+  @keyframes fade-in-top {
+    from {margin-top: -20px; opacity: 0;}
+    to {margin-top: 0px; opacity: 1}
+  }

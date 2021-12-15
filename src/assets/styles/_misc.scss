@@ -47,3 +47,13 @@ body {
     border-radius: 0px;
     box-shadow: inset 0px 0px 0px 0px #F0F0F0;
     }
+
+    
+
+  button {
+    transition: all .1s ease-in-out;
+  }
+  
+  button:hover {
+    transform: scale(1.05);
+  }
