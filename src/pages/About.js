@@ -2,6 +2,7 @@ import React from 'react'
 import Header from '../components/Header'
 
 import Fade from 'react-reveal/Fade';
+import Pulse from 'react-reveal/Pulse';
 
 function About() {
     return (

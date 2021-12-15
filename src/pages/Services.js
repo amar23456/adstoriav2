@@ -6,6 +6,8 @@ import ServicesBrand from '../assets/images/services-brand.png'
 import Header from '../components/Header'
 
 import { MdOutlineHorizontalRule } from 'react-icons/md'
+import Fade from 'react-reveal/Fade';
+import Pulse from 'react-reveal/Pulse';
 
 function Services() {
     return (
@@ -17,12 +19,13 @@ function Services() {
             <Header />
 
             <div className="hero">
-                <h1>OUR CAPABILITIES</h1>
+                <Fade><Pulse><h1>OUR CAPABILITIES</h1></Pulse></Fade>
             </div>
 
             <div className="main_services">
 
                 <div className="main_services--item">
+                <Fade left>
                     <div className="main_services--item--top">
                         <div className="main_services--item--top--number">
                             1
@@ -52,19 +55,21 @@ function Services() {
                         </div>
                     
                     </div>
+                    </Fade>
                 </div>
 
                 
                 <div className="main_services--item bg-color none-mobile">
-                    <img src={ServicesBrand} alt="" />
+                <Fade right><img src={ServicesBrand} alt="" /></Fade>
                 </div>
 
                 
                 <div className="main_services--item bg-color none-mobile">
-                    <img src={ServicesBrand} alt="" />
+                <Fade left><img src={ServicesBrand} alt="" /></Fade>
                 </div>
 
                 <div className="main_services--item">
+                <Fade right>
                     <div className="main_services--item--top">
                         <div className="main_services--item--top--number empty-number">
                             2
@@ -94,6 +99,7 @@ function Services() {
                         </div>
                     
                     </div>
+                    </Fade>
                 </div>
 
                 <div className="main_services--item">
