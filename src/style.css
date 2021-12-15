@@ -181,6 +181,31 @@ body {
   background: #ffffff;
 }
 
+.red {
+  background: #C7203C !important;
+}
+
+::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #a1a1a1;
+  border-radius: 16px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #B3AFB3;
+}
+
+::-webkit-scrollbar-track {
+  background: #F0F0F0;
+  border-radius: 0px;
+  -webkit-box-shadow: inset 0px 0px 0px 0px #F0F0F0;
+          box-shadow: inset 0px 0px 0px 0px #F0F0F0;
+}
+
 /* MOBILE */
 .main_home {
   display: -webkit-box;
@@ -799,7 +824,7 @@ button:hover {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 15px 20px;
-  border: 1px solid #A4A4A4;
+  border-bottom: 1px solid #A4A4A4;
 }
 
 .header--logo {
@@ -1018,6 +1043,82 @@ button:hover {
   margin: 0 0 7px 0;
 }
 
+.main_about {
+  margin: 40px 50px;
+}
+
+.main_about--top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+.main_about--top--item {
+  background: #1C2956;
+  padding: 10px 25px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.main_about--top--item h2 {
+  color: #ffffff;
+}
+
+.main_about--top--item p {
+  color: #ffffff;
+  line-height: 1.5rem;
+}
+
+.main_about--content {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.main_about--content--step {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.main_about--content--step P {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-size: 1.5rem;
+}
+
+.main_about--content--step h3 {
+  font-size: 2.1rem;
+}
+
+.main_about--content--step--image {
+  background: #A4A4A4;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid #ffffff;
+  position: relative;
+}
+
+.main_about--content--step--image::before {
+  content: '';
+  width: 10px;
+  height: 200px;
+  background: #A4A4A4;
+  position: absolute;
+  left: calc(50% - 10px);
+  top: 100px;
+  z-index: -5;
+}
+
 /* DESKTOP & TABLET */
 @media (min-width: 768px) {
   .header {
@@ -1035,7 +1136,7 @@ button:hover {
         -ms-flex-pack: justify;
             justify-content: space-between;
     padding: 15px 50px;
-    border: 1px solid #A4A4A4;
+    border-bottom: 1px solid #A4A4A4;
   }
   .header--logo {
     display: -webkit-box;
