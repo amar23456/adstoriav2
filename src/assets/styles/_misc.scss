@@ -19,6 +19,10 @@ body {
     background: $second !important;
 }
 
+.main_about--content--step--image:last-of-type(2) {
+    background: red !important;
+}
+
 ::-webkit-scrollbar{
     width: 9px;
     height: 9px;

@@ -185,6 +185,10 @@ body {
   background: #C7203C !important;
 }
 
+.main_about--content--step--image:last-of-type(2) {
+  background: red !important;
+}
+
 ::-webkit-scrollbar {
   width: 9px;
   height: 9px;
@@ -1082,7 +1086,7 @@ button:hover {
   display: -ms-flexbox;
   display: flex;
   gap: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 100px;
 }
 
 .main_about--content--step P {
@@ -1116,11 +1120,11 @@ button:hover {
 
 .main_about--content--step--image::before {
   content: '';
-  width: 5px;
-  height: 200px;
+  width: 3px;
+  height: 250px;
   background: #A4A4A4;
   position: absolute;
-  left: calc(50% - 3px);
+  left: calc(50% - 2px);
   top: 20px;
   z-index: -5;
 }
