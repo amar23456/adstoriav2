@@ -46,7 +46,7 @@ function About() {
                     </div>
 
                     <div className="main_about--content--step">
-                        <div className="main_about--content--step--image">
+                        <div className="main_about--content--step--image hidden">
                         </div>
 
                         <p><span>We launch! Now your brand is ready to be seen, chosen and remembered!</span></p>

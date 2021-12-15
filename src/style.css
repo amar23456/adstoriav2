@@ -185,6 +185,10 @@ body {
   background: #C7203C !important;
 }
 
+.hidden::before {
+  display: none;
+}
+
 .main_about--content--step--image:last-of-type(2) {
   background: red !important;
 }
@@ -1125,7 +1129,7 @@ button:hover {
 .main_about--content--step--image::before {
   content: '';
   width: 3px;
-  height: 250px;
+  height: 270px;
   background: #A4A4A4;
   position: absolute;
   left: calc(50% - 2px);
