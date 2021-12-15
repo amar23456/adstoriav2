@@ -49,7 +49,7 @@ function About() {
                         <div className="main_about--content--step--image">
                         </div>
 
-                        <h3>We launch! Now your brand is ready to be seen, chosen and remembered.</h3>
+                        <p><span>We launch! Now your brand is ready to be seen, chosen and remembered!</span></p>
                     </div>
 
 

@@ -198,37 +198,47 @@
 
         &--step {
             display: flex;
-            align-items: center;
             gap: 30px;
-            margin-bottom: 50px;
+            margin-bottom:20px;
 
             P {
                 flex: 1;
                 font-size: 1.5rem;
+
+                span {
+                    font-weight: 700;
+                }
             }
 
             h3 {
                 font-size: 2.1rem;
             }
 
+            h1 {
+                font-size: 4rem;
+            }
+
             &--image {
-                background: $gray;
-                width: 200px;
-                height: 200px;
+                background: $main;
+                width: 30px;
+                height: 30px;
                 border-radius: 50%;
                 border: 5px solid $white;
-                position: relative;                         
-
+                position: relative;   
+                margin-top: 23px;    
+                
                     &::before {
                         content: '';
-                        width: 10px;
+                        width: 5px;
                         height: 200px;
                         background: $gray;
                         position: absolute;
-                        left: calc(50% - 10px);
-                        top: 100px;
+                        left: calc(50% - 3px);
+                        top: 20px;
                         z-index: -5;
-                    }                
+                }
+                
+                                
             }
         }
     }

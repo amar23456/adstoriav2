@@ -1081,11 +1081,8 @@ button:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   gap: 30px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 .main_about--content--step P {
@@ -1095,27 +1092,36 @@ button:hover {
   font-size: 1.5rem;
 }
 
+.main_about--content--step P span {
+  font-weight: 700;
+}
+
 .main_about--content--step h3 {
   font-size: 2.1rem;
 }
 
+.main_about--content--step h1 {
+  font-size: 4rem;
+}
+
 .main_about--content--step--image {
-  background: #A4A4A4;
-  width: 200px;
-  height: 200px;
+  background: #1C2956;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   border: 5px solid #ffffff;
   position: relative;
+  margin-top: 23px;
 }
 
 .main_about--content--step--image::before {
   content: '';
-  width: 10px;
+  width: 5px;
   height: 200px;
   background: #A4A4A4;
   position: absolute;
-  left: calc(50% - 10px);
-  top: 100px;
+  left: calc(50% - 3px);
+  top: 20px;
   z-index: -5;
 }
 
