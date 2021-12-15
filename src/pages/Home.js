@@ -65,7 +65,6 @@ function Home() {
                 <div className="main_home--video--nav">
                     <Link to="/">Home</Link>
                     <Link to="/services">Services</Link>
-                    <Link to="/portofolio">Portofolio</Link>
                     <Link to="/about-us">About Us</Link>
                     <Link to="/contact">Contact</Link>
                 </div>
