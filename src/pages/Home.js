@@ -39,7 +39,6 @@ function Home() {
                         <div className="nav-menu-items">
                             <Link to="/">Home</Link>
                             <Link to="/services">Services</Link>
-                            <Link to="/portofolio">Portofolio</Link>
                             <Link to="/about-us">About Us</Link>
                             <Link to="/contact">Contact</Link>
                         </div>                  
