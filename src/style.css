@@ -1040,7 +1040,7 @@ button:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 10px;
+  margin: 30px;
   gap: 0;
 }
 
@@ -1049,6 +1049,65 @@ button:hover {
   color: #ffffff;
   padding: 30px 15px;
   width: 100%;
+}
+
+.main_contact--informations--top h1 {
+  margin: 5px 0;
+}
+
+.main_contact--informations ul {
+  list-style-type: none;
+  margin: 50px 0;
+  padding: 0;
+}
+
+.main_contact--informations ul li {
+  margin: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main_contact--informations ul li svg {
+  margin: 0 20px 0 0;
+  color: #C7203C;
+}
+
+.main_contact--informations--icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main_contact--informations--icons .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px;
+  border-radius: 50%;
+  margin: 0 20px 0 0;
+  cursor: pointer;
+}
+
+.main_contact--informations--icons .icon:hover {
+  background: #C7203C;
+}
+
+.main_contact--informations--icons .icon:hover svg {
+  color: #ffffff;
+}
+
+.main_contact--informations--icons .icon svg {
+  color: #C7203C;
 }
 
 .main_contact--form {
