@@ -17,11 +17,7 @@ function Services() {
             </Helmet>
 
             <Header />
-
-            <div className="hero">
-                <Fade><Pulse><h1>OUR CAPABILITIES</h1></Pulse></Fade>
-            </div>
-
+            
             <div className="main_services">
 
                 <div className="main_services--item">
