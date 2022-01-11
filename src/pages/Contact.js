@@ -3,6 +3,10 @@ import Header from '../components/Header'
 
 import { RiPhoneFill, RiMailFill, RiMapPin2Fill, RiFacebookFill, RiInstagramFill, RiYoutubeFill } from 'react-icons/ri';
 
+import { ExternalLink } from 'react-external-link';
+import { Link } from "react-router-dom";
+import { BsFillArrowRightCircleFill } from 'react-icons/bs';
+
 import Fade from 'react-reveal/Fade';
 
 function Contact() {
@@ -23,7 +27,7 @@ function Contact() {
                     </ul>
                     <div className="main_contact--informations--icons">
                         <div className="icon">
-                            <RiFacebookFill size="30px" />
+                            <ExternalLink href="https://www.facebook.com/AdStoria-Lab-107793971775092"><RiFacebookFill size="30px" /></ExternalLink>
                         </div>
                         <div className="icon">
                              <RiInstagramFill size="30px" />   
@@ -37,14 +41,18 @@ function Contact() {
 
                 <div className="main_contact--form">
                     <form>
-                        <h4>First Name</h4>
+                        <h4>First Nase</h4>
                         <input placeholder="First Name" />
                         <h4>Last Name</h4>
                         <input placeholder="Last Name" />
                         <h4>Email</h4>
                         <input placeholder="Email" />
                         <h4>Message</h4>
-                        <textarea placeholder="Name" />
+                        <textarea placeholder="Message" />
+                        <Link to="/contact"><div className="button">
+                Send 
+                <BsFillArrowRightCircleFill size="23" />
+            </div></Link>
                     </form>
                 </div>
             </div>

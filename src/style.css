@@ -1122,19 +1122,60 @@ button:hover {
   width: 100%;
 }
 
-.main_contact--form input {
+.main_contact--form form input {
   width: 95%;
   padding: 5px 10px;
   height: 35px;
   margin-bottom: 15px;
+  border: 1px solid #A4A4A4;
 }
 
-.main_contact--form textarea {
-  width: 100%;
+.main_contact--form form textarea {
+  width: 95% !important;
+  padding: 10px 10px;
+  height: 45px;
+  margin-bottom: 15px;
+  border: 1px solid #A4A4A4;
+  resize: none;
 }
 
-.main_contact--form h4 {
+.main_contact--form form h4 {
   margin: 0 0 7px 0;
+  display: none;
+}
+
+.main_contact--form form .button {
+  background: #C7203C;
+  color: #ffffff;
+  border-radius: 8px;
+  padding: 13px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.main_contact--form form .button:hover {
+  background: #131418;
+}
+
+.main_contact--form form .button:hover svg {
+  -webkit-transition: -webkit-transform .5s ease-in-out;
+  transition: -webkit-transform .5s ease-in-out;
+  transition: transform .5s ease-in-out;
+  transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out;
+  -webkit-transform: rotate(330deg);
+          transform: rotate(330deg);
 }
 
 .main_about {
@@ -1422,7 +1463,7 @@ button:hover {
             flex: 1;
   }
   .main_contact--form form textarea {
-    width: 100%l;
+    width: 100%;
   }
   .main_about {
     margin: 40px 50px;
