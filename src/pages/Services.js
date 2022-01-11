@@ -4,6 +4,7 @@ import { Helmet } from "react-helmet";
 import ServicesBrand from '../assets/images/services-brand.png'
 
 import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 import { MdOutlineHorizontalRule } from 'react-icons/md'
 import Fade from 'react-reveal/Fade';
@@ -99,6 +100,8 @@ function Services() {
                 </div>
 
             </div>
+
+            <Footer />
         </>
     )
 }

@@ -1,5 +1,6 @@
 import React from 'react'
 import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 import { Link } from "react-router-dom";
 
@@ -17,6 +18,8 @@ function Contact() {
                     <Link to="/">Click here to go back home</Link>
                 </div>
             </div>
+
+            <Footer />
         </>
     )
 }

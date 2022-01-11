@@ -1,5 +1,6 @@
 import React from 'react'
 import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 import { RiPhoneFill, RiMailFill, RiMapPin2Fill, RiFacebookFill, RiInstagramFill, RiYoutubeFill } from 'react-icons/ri';
 
@@ -56,6 +57,8 @@ function Contact() {
                     </form>
                 </div>
             </div>
+
+            <Footer />
         </>
     )
 }
