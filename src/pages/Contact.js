@@ -4,7 +4,12 @@ import Footer from '../components/Footer'
 
 import logobg from '../assets/images/logo-white-stroke.png'
 
-import { RiPhoneFill, RiMailFill, RiMapPin2Fill, RiFacebookFill, RiInstagramFill, RiYoutubeFill } from 'react-icons/ri';
+import { RiPhoneFill, RiMailFill, RiMapPin2Fill } from 'react-icons/ri';
+import { RiFacebookBoxFill } from "react-icons/ri";
+import { RiLinkedinBoxFill } from "react-icons/ri";
+import { RiInstagramFill } from "react-icons/ri";
+import { RiYoutubeFill } from "react-icons/ri";
+import { RiTwitterFill } from "react-icons/ri";
 
 import { ExternalLink } from 'react-external-link';
 import { Link } from "react-router-dom";
@@ -32,15 +37,11 @@ function Contact() {
                         <li><RiMapPin2Fill size="30px" />30 N, Gould St, Sheridan, WY</li>
                     </ul>
                     <div className="main_contact--informations--icons">
-                        <div className="icon">
-                            <ExternalLink href="https://www.facebook.com/AdStoria-Lab-107793971775092"><RiFacebookFill size="30px" /></ExternalLink>
-                        </div>
-                        <div className="icon">
-                             <RiInstagramFill size="30px" />   
-                        </div>
-                        <div className="icon">
-                            <RiYoutubeFill size="30px" />
-                        </div>
+                        <ExternalLink className="icon" href="https://www.facebook.com/AdStoria-Lab-107793971775092"><RiFacebookBoxFill size="25"  /></ExternalLink>
+                        <ExternalLink className="icon" href="https://www.linkedin.com/company/adstoria-lab"><RiLinkedinBoxFill size="25"  /></ExternalLink>
+                        <ExternalLink className="icon" href="https://www.instagram.com/adstoria.io/"><RiInstagramFill size="25"  /></ExternalLink>
+                        <ExternalLink className="icon" href="https://www.youtube.com/channel/UClo6adnxsLZd0igSHge06GA/"><RiYoutubeFill size="25"  /></ExternalLink>
+                        <ExternalLink className="icon" href="https://www.twitter.com/adstoria" target="_blank"><RiTwitterFill size="25"  /></ExternalLink>
                     </div>
                 </div>
 
