@@ -1057,7 +1057,7 @@ button:hover {
   width: 300px;
   -webkit-transform: rotate(-30deg);
           transform: rotate(-30deg);
-  opacity: 1;
+  opacity: .1;
   position: absolute;
   bottom: -20px;
   right: -30px;
@@ -1561,7 +1561,7 @@ button:hover {
     width: 300px;
     -webkit-transform: rotate(-30deg);
             transform: rotate(-30deg);
-    opacity: .1;
+    opacity: 1;
     position: absolute;
     bottom: -20px;
     right: -30px;
