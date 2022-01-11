@@ -930,7 +930,7 @@ button:hover {
 
 .main_services--item {
   padding: 20px;
-  width: 100%;
+  width: calc(100% - 80px);
 }
 
 .main_services--item--top {
