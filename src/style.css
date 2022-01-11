@@ -1053,6 +1053,16 @@ button:hover {
   border-radius: 8px;
 }
 
+.main_contact--informations .background {
+  width: 300px;
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+  position: absolute;
+  bottom: -20px;
+  right: -30px;
+  visibility: visible;
+}
+
 .main_contact--informations--top h1 {
   margin: 5px 0;
 }
@@ -1543,6 +1553,17 @@ button:hover {
   .main_contact--informations {
     padding: 50px;
     width: 30%;
+    position: relative;
+    overflow: hidden;
+  }
+  .main_contact--informations .background {
+    width: 300px;
+    -webkit-transform: rotate(-30deg);
+            transform: rotate(-30deg);
+    position: absolute;
+    bottom: -20px;
+    right: -30px;
+    visibility: visible;
   }
   .main_contact--form {
     -webkit-box-orient: horizontal;

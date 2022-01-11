@@ -2,6 +2,8 @@ import React from 'react'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 
+import logobg from '../assets/images/logo-white-stroke.png'
+
 import { RiPhoneFill, RiMailFill, RiMapPin2Fill, RiFacebookFill, RiInstagramFill, RiYoutubeFill } from 'react-icons/ri';
 
 import { ExternalLink } from 'react-external-link';
@@ -18,14 +20,15 @@ function Contact() {
 
             <div className="main_contact">
                 <div className="main_contact--informations">
+                    <img src={logobg} className="background" />
                     <div className="main_contact--informations--top">
                         <h1>Contact informations</h1>
                         <p>Feel free to ask us any questions</p>
                     </div>
                     <ul>
-                        <li><RiPhoneFill size="30px" />+0123 4567 8910</li>
+                        <li><RiPhoneFill size="30px" />+917-684-7265</li>
                         <li><RiMailFill size="30px" />contact@adstoria.io</li>
-                        <li><RiMapPin2Fill size="30px" />102 Street 2714 Don</li>
+                        <li><RiMapPin2Fill size="30px" />30 N, Gould St, Sheridan, WY</li>
                     </ul>
                     <div className="main_contact--informations--icons">
                         <div className="icon">
