@@ -150,6 +150,7 @@
         .background {
             width: 300px;
             transform: rotate(-30deg);
+            opacity: 1;
             position: absolute;
             bottom: -20px;
             right: -30px;
@@ -564,6 +565,7 @@
             .background {
                 width: 300px;
                 transform: rotate(-30deg);
+                opacity: .1;
                 position: absolute;
                 bottom: -20px;
                 right: -30px;
