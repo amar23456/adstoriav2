@@ -1313,7 +1313,6 @@ button:hover {
   border-top-right-radius: 8px;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
-  width: 200px;
 }
 
 .main_footer--newsletter form input:focus {
