@@ -9,6 +9,7 @@ import Footer from '../components/Footer'
 import { MdOutlineHorizontalRule } from 'react-icons/md'
 import Fade from 'react-reveal/Fade';
 import Pulse from 'react-reveal/Pulse';
+import { motion, AnimatePresence } from "framer-motion"
 
 function Services() {
     return (
@@ -16,9 +17,15 @@ function Services() {
             <Helmet>
                 <title>Services - Adstoria</title>
             </Helmet>
+            <AnimatePresence>
+            <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }} >
 
             <Header />
 
+        
             <div className="main_services">
 
                 <div className="main_services--item">
@@ -102,6 +109,8 @@ function Services() {
             </div>
 
             <Footer />
+            </motion.div>
+            </AnimatePresence>
         </>
     )
 }

@@ -9,6 +9,7 @@ import { Link } from "react-router-dom";
 import { BsFillArrowRightCircleFill } from 'react-icons/bs';
 
 import Fade from 'react-reveal/Fade';
+import { motion, AnimatePresence } from "framer-motion"
 
 function Contact() {
     return (
@@ -63,6 +64,7 @@ function Contact() {
             </div>
 
             <Footer />
+
         </>
     )
 }

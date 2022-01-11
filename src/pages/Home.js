@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { FullScreen, useFullScreenHandle } from "react-full-screen";
 import ReactPlayer from 'react-player'
 
+import { motion, AnimatePresence } from "framer-motion"
+
 import Logo from '../assets/images/logo.png'
 import Video from '../assets/images/video_compressed.webm'
 import VideoFull from '../assets/images/video_full.mp4'
@@ -20,7 +22,12 @@ function Home() {
     const showMenu = () => setMenu (!menu);
 
     return (
-        <div className="main_home">
+        <AnimatePresence>
+        <motion.div className="main_home"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+        >
             <div className="main_home--info">
 
                 <div className="main_home--info--header">
@@ -80,7 +87,8 @@ function Home() {
                 </div>
                 <video lazy loop autostart autoPlay muted src={Video} />
             </div>
-        </div>
+        </motion.div>
+        </AnimatePresence>
     )
 }
 
