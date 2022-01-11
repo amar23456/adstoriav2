@@ -42,7 +42,8 @@ function Contact() {
 
                 <div className="main_contact--form">
                     <form>
-                        <h4>First Nase</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent est sapien, hendrerit id elit vitae, laoreet iaculis odio. Nunc id augue vestibulum ipsum rhoncus rhoncus vel eu orci. Nullam mauris quam, consequat at lacinia in, ultrices et mauris. Vivamus euismod auctor posuere.</p>
+                        <h4>First Name</h4>
                         <input placeholder="First Name" />
                         <h4>Last Name</h4>
                         <input placeholder="Last Name" />
@@ -50,12 +51,15 @@ function Contact() {
                         <input placeholder="Email" />
                         <h4>Message</h4>
                         <textarea placeholder="Message" />
-                        <Link to="/contact"><div className="button">
-                Send 
-                <BsFillArrowRightCircleFill size="23" />
-            </div></Link>
+                        <Link to="/contact">
+                            <div className="button">
+                                Send 
+                                <BsFillArrowRightCircleFill size="23" />
+                            </div>
+                        </Link>
                     </form>
                 </div>
+                
             </div>
 
             <Footer />

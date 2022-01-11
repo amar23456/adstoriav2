@@ -615,6 +615,7 @@ button:hover {
     color: #ffffff;
     text-decoration: none;
     position: relative;
+    font-size: 1.2rem;
   }
   .main_home--video--nav a:after {
     content: '';
@@ -1049,6 +1050,7 @@ button:hover {
   color: #ffffff;
   padding: 30px 15px;
   width: 100%;
+  border-radius: 8px;
 }
 
 .main_contact--informations--top h1 {
@@ -1128,6 +1130,7 @@ button:hover {
   height: 35px;
   margin-bottom: 15px;
   border: 1px solid #A4A4A4;
+  border-radius: 8px;
 }
 
 .main_contact--form form textarea {
@@ -1137,11 +1140,16 @@ button:hover {
   margin-bottom: 15px;
   border: 1px solid #A4A4A4;
   resize: none;
+  border-radius: 8px;
 }
 
 .main_contact--form form h4 {
   margin: 0 0 7px 0;
   display: none;
+}
+
+.main_contact--form form input:focus h4 {
+  display: block;
 }
 
 .main_contact--form form .button {
@@ -1159,9 +1167,9 @@ button:hover {
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 1px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   cursor: pointer;
 }
 
@@ -1200,6 +1208,7 @@ button:hover {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  border-radius: 8px;
 }
 
 .main_about--top--item h2 {

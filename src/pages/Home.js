@@ -53,7 +53,7 @@ function Home() {
                 </div>                
 
                 <div className="main_home--info--cta">
-                <Link to=""><button>
+                <Link to="/services"><button>
                     Get started
                     <BsFillArrowRightCircleFill size="35" />
                     </button></Link>
