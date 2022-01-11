@@ -18,6 +18,7 @@ function Contact() {
         <>
             <Header />
 
+            <Fade>
             <div className="main_contact">
                 <div className="main_contact--informations">
                     <img src={logobg} className="background" />
@@ -65,6 +66,8 @@ function Contact() {
                 </div>
                 
             </div>
+
+            </Fade>
 
             <Footer />
 
