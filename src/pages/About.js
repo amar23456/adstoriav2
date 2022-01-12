@@ -3,7 +3,6 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 
 import Fade from 'react-reveal/Fade';
-import Pulse from 'react-reveal/Pulse';
 
 function About() {
     return (

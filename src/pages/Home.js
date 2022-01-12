@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { FullScreen, useFullScreenHandle } from "react-full-screen";
-import ReactPlayer from 'react-player'
 
 import { motion, AnimatePresence } from "framer-motion"
 
@@ -11,7 +10,6 @@ import VideoFull from '../assets/images/video_full.mp4'
 import { Link } from "react-router-dom";
 
 import { AiOutlineMenu } from 'react-icons/ai';
-import { AiOutlineCloseCircle } from 'react-icons/ai';
 import { BsFillPlayCircleFill } from 'react-icons/bs';
 import { BsFillArrowRightCircleFill } from 'react-icons/bs';
 

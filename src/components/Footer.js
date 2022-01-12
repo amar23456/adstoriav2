@@ -1,9 +1,5 @@
-import React, { useState } from 'react'
+import React from 'react'
 
-import { Link } from "react-router-dom";
-
-import Logo from '../assets/images/logo.png'
-import { AiOutlineMenu } from 'react-icons/ai';
 import { BsFillEnvelopeFill} from 'react-icons/bs';
 
 function Footer() {

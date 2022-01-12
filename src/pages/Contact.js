@@ -16,7 +16,6 @@ import { Link } from "react-router-dom";
 import { BsFillArrowRightCircleFill } from 'react-icons/bs';
 
 import Fade from 'react-reveal/Fade';
-import { motion, AnimatePresence } from "framer-motion"
 
 function Contact() {
     return (
@@ -26,7 +25,7 @@ function Contact() {
             <Fade>
             <div className="main_contact">
                 <div className="main_contact--informations">
-                    <img src={logobg} className="background" />
+                    <img src={logobg} className="background" alt="background cotact adstoria logo" />
                     <div className="main_contact--informations--top">
                         <h1>Contact informations</h1>
                         <p>Feel free to ask us any questions</p>
